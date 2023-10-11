@@ -6,7 +6,7 @@ from tensorflow.keras.optimizers import Adam
 from conditional_generator import build_conditional_generator
 from conditional_discriminator import build_conditional_discriminator
 
-from utils.loss import wasserstein_loss
+from utils.loss_calculator import wasserstein_loss
 
 def build_conditional_gan(latent_dim, learning_rate):
     # Input layers
